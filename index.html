@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mevs Pet Shop | Premium Pet Accessories</title>
+    <meta name="description"
+        content="Mevs Pet Shop offers premium accessories for your beloved pets. From stylish collars to cozy beds.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#home" class="logo"><img src="assets/logo.jpeg" alt="Mevs Pet Shop Logo"></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon" onclick="window.checkoutWhatsapp()" title="Checkout via WhatsApp">
+            <i class="ri-shopping-cart-2-line"></i>
+            <span class="cart-count" id="nav-cart-count">0</span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Premium Care for Your Best Friend</h1>
+            <p>Discover our exclusive collection of high-quality accessories, toys, and essentials designed for the
+                comfort and joy of your pets.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero.png" alt="Premium pet accessories with a golden retriever and fluffy cat">
+        </div>
+    </header>
+
+    <section id="products" class="products-section">
+        <div class="section-header">
+            <h2>Our Collection</h2>
+            <p>Hand-picked premium pet accessories and toys</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Accessories">Accessories</button>
+            <button class="filter-btn" data-filter="Toys">Toys</button>
+            <button class="filter-btn" data-filter="Collars">Collars & Leashes</button>
+        </div>
+
+        <div id="product-grid" class="product-grid">
+            <div class="loading-state" id="loading-indicator">
+                <i class="ri-loader-4-line ri-spin" style="font-size: 2rem; color: var(--primary);"></i>
+                <p style="margin-top: 1rem;">Loading premium products...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section"
+        style="padding: 6rem 5%; background-color: var(--bg-light); text-align: center;">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>We're always here for you and your pets</p>
+        </div>
+        <div class="contact-card"
+            style="background: white; max-width: 600px; margin: 0 auto; padding: 4rem 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); transition: var(--transition);">
+            <div
+                style="width: 80px; height: 80px; background: rgba(255,140,66,0.1); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 1.5rem;">
+                <i class="ri-whatsapp-line"></i>
+            </div>
+            <h3 style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;">Send a DM</h3>
+            <p
+                style="color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.1rem; max-width: 400px; margin-left: auto; margin-right: auto;">
+                Have a question about our premium accessories or need help with a custom order? Reach out to us directly
+                on WhatsApp.</p>
+            <a href="https://wa.me/14503011233" target="_blank" class="btn btn-primary"
+                style="font-size: 1.2rem; padding: 1.2rem 2.5rem; border-radius: 50px; display: inline-flex; align-items: center; gap: 0.8rem;">
+                <i class="ri-whatsapp-fill" style="font-size: 1.6rem;"></i> Send a DM
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo" style="margin-bottom: 1.2rem; display: block;"><img src="assets/logo.jpeg"
+                        alt="Mevs Pet Shop Logo"></a>
+                <p>Bringing joy and style to every pet's life, one premium accessory at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#products">New Arrivals</a></li>
+                    <li><a href="#products">Best Sellers</a></li>
+                    <li><a href="#products">Discounted</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Contact via Email</h4>
+                <p style="color: #cbd5e1; margin-bottom: 1.5rem; font-size: 0.9rem;">Reach out to our primary business
+                    email address directly:</p>
+                <a href="mailto:godwinokparume@gmail.com"
+                    style="background: var(--primary); color: white; padding: 1rem; border-radius: var(--radius-sm); display: block; text-align: center; font-weight: 600; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><i
+                        class="ri-mail-send-line" style="margin-right: 0.5rem;"></i>Send Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mevs Pet Shop. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #cbd5e1;">Created by <a
+                    href="http://www.raehub.live" target="_blank"
+                    style="color: var(--primary); text-decoration: none; font-weight: 500;">Rae Company</a></p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/14503011233" target="_blank" class="floating-whatsapp" title="Chat with us on WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <script type="module" src="js/firebase-config.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
